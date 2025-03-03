@@ -1,2 +1,2 @@
 #!/bin/bash
-sort | uniq -c
+tr -s '[:space:]' '\n' | grep -v '^$' | sort | uniq -c
